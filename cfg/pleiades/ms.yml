@@ -1,0 +1,32 @@
+collection:
+    id: phr-ms
+    description: SSGP Pleiades Multispectral
+    match: .*_PHR.*_MS_.*TIF
+
+    item:
+        common:
+            platform: Pleiades
+            instruments: [ HiRI ]
+            constellation: Pleiades
+            norads: [ 38012, 39019 ]
+            gsd: 2.8
+        eo:
+            bands:
+                - name: Red
+                  description: 'Red: 590 - 710 nm'
+                  common_name: red
+                  center_wavelength: 650
+                - name: Green
+                  description: 'Green: 500 - 620 nm'
+                  common_name: green
+                  center_wavelength: 560      
+                - name: Blue
+                  description: 'Blue: 430 - 550 nm'
+                  common_name: blue
+                  center_wavelength: 490
+                - name: Near-infrared
+                  description: 'Near-infrared: 740 - 940 nm'
+                  common_name: nir
+                  center_wavelength: 840
+
+

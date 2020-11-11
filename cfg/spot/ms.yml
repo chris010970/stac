@@ -1,0 +1,33 @@
+collection:
+    id: spot-ms
+    description: SSGP SPOT Multispectral
+    match: .*_SPOT.*_MS_.*TIF
+
+    item:
+        common:
+            platform: SPOT
+            instruments: [ 'HRVIR' ]
+            constellation: SPOT
+            norads: [ 38755, 40053 ]
+            gsd: 6.0
+        eo:
+            bands:
+                - name: Red
+                  description: 'Red: 625 - 695 nm'
+                  common_name: red
+                  center_wavelength: 660
+                - name: Green
+                  description: 'Green: 530 - 590 nm'
+                  common_name: green
+                  center_wavelength: 560      
+                - name: Blue
+                  description: 'Blue: 450 - 525 nm'
+                  common_name: blue
+                  center_wavelength: 485
+                - name: Near-infrared
+                  description: 'Near-infrared: 760 - 890 nm'
+                  common_name: nir
+                  center_wavelength: 825
+
+
+

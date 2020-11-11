@@ -1,0 +1,80 @@
+catalog:
+    id: ssgp
+    description: SSGP datasets
+    children:
+
+      - catalog:
+            id: ssgp-ms
+            description: SSGP Multispectral datasets
+            children:
+
+              - collection:
+                    id: pleiades-ms
+                    description: SSGP Multispectral Pleiades datasets
+                    license: Open Government License
+                    providers: UKSA, SAC
+                    items:
+                        - bucket: gs://general-bucketface-001
+                          key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                          prefix: gla/ssgp/cog/38012
+                          pattern: .*_MS.*TIF
+
+                        - bucket: gs://general-bucketface-001
+                          key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                          prefix: gla/ssgp/cog/39019
+                          pattern: .*_MS.*TIF
+
+              - collection:
+                    id: spot-ms
+                    description: SSGP Multispectral SPOT 6/7 datasets
+                    license: Open Government License
+                    providers: UKSA, SAC
+                    items:
+                        - bucket: gs://general-bucketface-001
+                          key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                          prefix: gla/ssgp/cog/38755
+                          pattern: .*_MS.*TIF
+
+                        - bucket: gs://general-bucketface-001
+                          key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                          prefix: gla/ssgp/cog/40053
+                          pattern: .*_MS.*TIF
+
+      - catalog:
+                id: ssgp-pan
+                description: SSGP Multispectral Pansharpened datasets
+                children:
+
+                  - collection:
+                        id: pleiades-pan
+                        description: SSGP Multispectral Pansharpened Pleiades datasets
+                        license: Open Government License
+                        providers: UKSA, SAC
+                        items:
+                            - bucket: gs://general-bucketface-001
+                              key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                              prefix: gla/ssgp/cog/38012
+                              pattern: .*_PAN.*TIF
+
+                            - bucket: gs://general-bucketface-001
+                              key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                              prefix: gla/ssgp/cog/39019
+                              pattern: .*_PAN.*TIF
+
+                  - collection:
+                        id: spot-pan
+                        description: SSGP Multispectral Pansharpened SPOT 6/7 datasets
+                        license: Open Government License
+                        providers: UKSA, SAC
+                        items:
+                            - bucket: gs://general-bucketface-001
+                              key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                              prefix: gla/ssgp/cog/38755
+                              pattern: .*_PAN.*TIF
+
+                            - bucket: gs://general-bucketface-001
+                              key: /home/sac/.gcs/gi-science-d2fa240b37e3.json
+                              prefix: gla/ssgp/cog/40053
+                              pattern: .*_PAN.*TIF
+
+
